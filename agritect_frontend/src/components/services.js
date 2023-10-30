@@ -1,8 +1,6 @@
 import React from 'react';
 
-import GridComponent from './card2';
-import "../assets/css/style.css"
-
+import ServiceCard from './card1';
 
 function ServicesSection() {
     const services = [
@@ -28,27 +26,16 @@ function ServicesSection() {
         },
     ];
 
-    return (
-        <div id="services" className="">
-            <div className="container">
-                <div className="row">
-                    <div className="col-lg-8 offset-lg-2">
-                        <div className="section-heading wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
-                            <h4 className='heading-underline'>Our AI-powered Services & Features</h4>
-                            <p>Empowering farmers with cutting-edge AI technology and agricultural insights.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div className="container">
-                <div className="row">
-                    {services.map((service, index) => (
-                        <GridComponent key={index} {...service} />
-                    ))}
-                </div>
-            </div>
-        </div>
-    );
+    const items = services.map((item) => (
+        <ServiceCard
+            icon={item.icon}
+            title={item.title}
+            description={item.description}
+        />
+    ));
+
+    return <div className='d-flex flex-row m-2'>{items}</div>;
 }
 
 export default ServicesSection;
+

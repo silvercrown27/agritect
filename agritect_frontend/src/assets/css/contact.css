@@ -1,0 +1,27 @@
+.wrapper {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.contactForm .form-control {
+    border: none;
+}
+
+.form-control:focus, .form-control:active {
+    border-color: #00b75b !important;
+    border: 1px;
+}
+
+.btn-submit {
+    background-color: #00ff22 !important;
+}
+.btn-submit:hover {
+    background-color: #00b75b !important;
+}

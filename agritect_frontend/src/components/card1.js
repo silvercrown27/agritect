@@ -6,16 +6,17 @@ import "../assets/css/bootstrap.min.css";
 function ServiceCard({ icon, title, description }) {
     return (
         <div>
-            <article class="card">
-                <img src={background} className='card__background'/>
-                {icon}
-                <div class="card__content | flow">
-                    <div class="card__content--container | flow">
-                        <h2 class="card__title">{title}</h2>
-                        <p class="card__description">{description}
+            <article className="card">
+                <img src={background} alt="Agriculture" className='card__background'/>
+                <i className="fas fa-seedling"></i>
+                <div className="card__content | flow">
+                    
+                    <div className="card__content--container | flow">
+                        <h2 className="card__title">{title}</h2>
+                        <p className="card__description">{description}
                         </p>
                     </div>
-                    <button class="card__button">Read more</button>
+                    <button className="card__button">Read more</button>
                 </div>
             </article>
         </div>

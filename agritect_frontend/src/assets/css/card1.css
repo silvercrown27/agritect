@@ -2,7 +2,7 @@
 
 :root {
   /* Colors */
-  --brand-color: hsl(46, 100%, 50%);
+  --brand-color: #00ff22;
   --black: hsl(0, 0%, 0%);
   --white: hsl(0, 0%, 100%);
   /* Fonts */
@@ -34,7 +34,7 @@ body {
 }
 
 h2 {
-  font-size: 1.50rem;
+  font-size: 1.30rem;
   font-family: var(--font-title);
   color: var(--white);
   line-height: 1.1;
@@ -58,8 +58,8 @@ p {
   place-items: center;
   width: 95%;
   margin: 20px;
-  max-width: 21.875rem;
-  height: 28.125rem;
+  max-width: 18.875rem;
+  height: 22.125rem;
   overflow: hidden;
   border-radius: 0.625rem;
   box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.25);
@@ -82,7 +82,7 @@ p {
   flex-direction: column;
   justify-content: space-between;
   align-self: flex-end;
-  height: 55%;
+  height: 65%;
   padding: 12% 1.25rem 1.875rem;
   background: linear-gradient(
     180deg,
